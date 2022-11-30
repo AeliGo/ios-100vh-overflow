@@ -58,7 +58,7 @@
     function resetHeight() {
       // reset the section/column height to that of the inner browser
       document.getElementById("main-content").style.height =
-        window.innerHeight + "px";
+        window.innerHeight -100 + "px";
     }
     // reset the height whenever the window's resized
     window.addEventListener("resize", resetHeight);
