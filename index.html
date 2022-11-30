@@ -52,13 +52,12 @@
         </p>
       </div>
     </main>
-    <footer>FOOTER GOES HERE</footer>
   </body>
   <script>
     function resetHeight() {
       // reset the section/column height to that of the inner browser
       document.getElementById("main-content").style.height =
-        window.innerHeight - 106 + "px";
+        window.innerHeight - 100 + "px";
       console.log(window.innerHeight, "window.innerHeight");
     }
     // reset the height whenever the window's resized
@@ -101,6 +100,7 @@
     header {
       background-color: #001f3f;
       color: #80bfff;
+      height: 100px;
     }
 
     main {
