@@ -57,9 +57,9 @@
   <script>
     function resetHeight() {
       // reset the section/column height to that of the inner browser
-      document.getElementById("main-content").style.minHeight =
-        window.innerHeight - 100 + "px";
-        console.log(window.innerHeight, 'window.innerHeight')
+      document.getElementById("main-content").style.Height =
+        window.innerHeight - 106 + "px";
+      console.log(window.innerHeight, "window.innerHeight");
     }
     // reset the height whenever the window's resized
     window.addEventListener("resize", resetHeight);
@@ -68,7 +68,7 @@
   </script>
   <style>
     body {
-      height: 100vh;
+      min-height: 100vh;
       /* mobile viewport bug fix */
       min-height: -webkit-fill-available;
     }
@@ -104,6 +104,7 @@
     }
 
     main {
+      flex: 1;
       overflow-y: scroll;
     }
 
