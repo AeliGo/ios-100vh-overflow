@@ -12,7 +12,7 @@
   <body>
     <main id="main-content">
       <div class="content-wrapper">
-        <div>
+        <div style="height: 100%;">
           <div class="content">
             <div>
               <header>HEADER GOES HERE</header>
@@ -65,18 +65,7 @@
       </div>
     </main>
   </body>
-  <!-- <script>
-    function resetHeight() {
-      // reset the section/column height to that of the inner browser
-      document.getElementById("main-content").style.height =
-        window.innerHeight - 100 + "px";
-      console.log(window.innerHeight, "window.innerHeight");
-    }
-    // reset the height whenever the window's resized
-    window.addEventListener("resize", resetHeight);
-    // called to initially set the height.
-    resetHeight();
-  </script> -->
+
   <style>
     main {
       height: 100vh;
@@ -88,7 +77,7 @@
 
     html {
       overflow: hidden;
-      height: 100vh;
+      /* height: 100vh; */
       /* mobile viewport bug fix */
       height: -webkit-fill-available;
     }
