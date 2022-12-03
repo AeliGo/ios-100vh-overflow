@@ -75,10 +75,10 @@
       /* mobile viewport bug fix */
       height: -webkit-fill-available;
       overflow: hidden;
+      display: flex;
     }
 
     html {
-      height: 100vh;
       height: -webkit-fill-available;
     }
 
@@ -95,7 +95,6 @@
       font-size: 1rem;
       line-height: 1.5;
       margin: 0;
-      height: 100vh;
       height: -webkit-fill-available;
     }
 
@@ -118,10 +117,9 @@
     }
 
     .content {
-      height: 100%;
+      flex: 1;
       background-color: aquamarine;
-      overflow: auto;
-      min-height: 0px;
+      overflow: scroll;
     }
 
     a {
