@@ -11,94 +11,32 @@
   </head>
   <body>
     <main id="main-content">
-      <div class="content-wrapper">
-        <div style="height: 100%;">
-          <div class="content">
-            <div>
-              <header>HEADER GOES HERE</header>
-              <div>
-                <p>
-                  Now eventually you do plan to have
-                  <em
-                    ><a
-                      href="https://codepen.io/AllThingsSmitty/full/bpmZpK"
-                      target="_blank"
-                      >dinosaurs</a
-                    ></em
-                  >
-                  on your dinosaur tour? I thought you were one of your big
-                  brothers. There’s no unauthorized breeding in Jurassic Park.
-                </p>
-                <p>
-                  Amphibian DNA. When you gotta go, you gotta go. I bring
-                  scientists, you bring a rockstar. Uh uh uh!…You didn’t say the
-                  magic word! That is one big pile of shit.
-                </p>
-                <p>
-                  Are these characters…auto…erotica? They show extreme
-                  intelligence, even problem-solving intelligence. Hold onto
-                  your butts. Dinosaurs eat man; woman inherits the earth.
-                  Clever girl.
-                </p>
-                <p>
-                  Are these characters…auto…erotica? They show extreme
-                  intelligence, even problem-solving intelligence. Hold onto
-                  your butts. Dinosaurs eat maAre these characters…auto…erotica?
-                  They show extreme intelligence, even problem-solving
-                  intelligence. Hold onto your butts. Dinosaurs eat manAre these
-                  characters…auto…erotica? They show extreme intelligence, even
-                  problem-solving intelligence. Hold onto your butts. Dinosaurs
-                  eat manAre these characters…auto…erotica? They show extreme
-                  intelligence, even problem-solving intelligence. Hold onto
-                  your butts. Dinosaurs eat manAre these
-                  characters…auto…erotica? They show extreme intelligence, even
-                  problem-solving intelligence. Hold onto your butts. Dinosaurs
-                  eat manAre these characters…auto…erotica? They show extreme
-                  intelligence, even problem-solving intelligence. Hold onto
-                  your butts. Dinosaurs eat mann
-                </p>
-              </div>
-              <footer>Footer GOES HERE</footer>
-            </div>
-          </div>
-        </div>
-      </div>
+      <header>HEADER GOES HERE</header>
+      <div class="content">HEADER GOES HERE</div>
+      <footer>Footer GOES HERE</footer>
     </main>
   </body>
 
   <style>
     main {
-      height: 100%;
+      height: 100vh;
       /* mobile viewport bug fix */
-      /* height: -webkit-fill-available; */
+      height: -webkit-fill-available;
       overflow: hidden;
-      display: flex;
       margin: 0;
       padding: 0;
+      display: flex;
     }
 
     html {
-      height: 100%;
       overflow: hidden;
       /* mobile viewport bug fix */
-      /* height: -webkit-fill-available; */
+      height: -webkit-fill-available;
       margin: 0;
       padding: 0;
     }
 
-    .content-wrapper {
-      flex: 1;
-      padding: 1rem;
-    }
-
-    /* general styling */
-    :root {
-      font-size: calc(1vw + 1vh + 0.625vmin);
-    }
-
     body {
-      height: 100%;
-      /* display: flex;
       flex-direction: column; */
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -107,8 +45,13 @@
       margin: 0;
       padding: 0;
       /* mobile viewport bug fix */
-      /* height: -webkit-fill-available; */
+      height: -webkit-fill-available;
       overflow: hidden;
+    }
+
+    .content {
+        flex: 1;
+        overflow: scroll;
     }
 
     header,
@@ -126,12 +69,6 @@
     footer {
       background-color: #0074d9;
       color: #b3dbff;
-    }
-
-    .content {
-      height: 100%;
-      background-color: aquamarine;
-      overflow: scroll;
     }
 
     a {
