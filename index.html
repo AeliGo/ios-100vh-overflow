@@ -19,10 +19,7 @@
 
   <style>
     main {
-      height: 100vh;
-      /* mobile viewport bug fix */
-      height: -webkit-fill-available;
-      overflow: hidden;
+      height: 100%;
       margin: 0;
       padding: 0;
       display: flex;
@@ -30,7 +27,7 @@
     }
 
     html {
-      overflow: hidden;
+      height: 100vh;
       /* mobile viewport bug fix */
       height: -webkit-fill-available;
       margin: 0;
@@ -38,21 +35,19 @@
     }
 
     body {
-      flex-direction: column; */
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
       font-size: 1rem;
       line-height: 1.5;
       margin: 0;
       padding: 0;
+      height: 100vh;
       /* mobile viewport bug fix */
       height: -webkit-fill-available;
-      overflow: hidden;
     }
 
     .content {
         flex: 1;
-        overflow: scroll;
     }
 
     header,
